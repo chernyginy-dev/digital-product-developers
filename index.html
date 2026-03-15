@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nadiia and Vira Chernyginy — Frontend Developer specializing in HTML, CSS, JavaScript, Vue, WordPress, Shopify, and Email Development."
+    />
+    <title>Nadiia and Vira Chernyginy — Frontend Developers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== NAVIGATION ===== -->
+    <header class="site-header" id="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="#hero" class="nav__logo">NV<span class="dot">.</span></a>
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__list" id="nav-menu" role="list">
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== HERO ===== -->
+      <section class="hero" id="hero">
+        <div class="container hero__inner">
+          <div class="hero__text">
+            <p class="hero__eyebrow reveal">Frontend Developers</p>
+            <h1 class="hero__name reveal">
+              Nadiia and Vira<br /><em>Chernyginy</em>
+            </h1>
+            <p class="hero__intro reveal">
+              <b>Web & Digital Product Developers</b><br />
+              14+ years creating websites and digital platforms for businesses,
+              turning ideas into functional, user-friendly online products.
+            </p>
+            <div class="hero__actions reveal">
+              <a href="#projects" class="btn btn--primary">View Work</a>
+              <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+            </div>
+          </div>
+          <div class="hero__image reveal">
+            <div class="hero__image-wrap">
+              <img
+                src="assets/photo_nadiia_vira.jpg"
+                alt="Portrait of Nadiia Chernyginy, Frontend Developer"
+                width="480"
+                height="560"
+                loading="eager"
+              />
+            </div>
+            <div class="hero__badge" aria-hidden="true">
+              <span>14+</span>
+              <small>Years<br />Experience</small>
+            </div>
+          </div>
+        </div>
+        <div class="hero__scroll" aria-hidden="true">
+          <span>Scroll</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT ===== -->
+      <section class="about section" id="about">
+        <div class="container about__inner">
+          <div class="section__label reveal">About</div>
+          <div class="about__content">
+            <h2 class="about__heading reveal">
+              Turning designs into<br /><em>living, breathing</em> interfaces.
+            </h2>
+            <div class="about__body reveal">
+              <p>
+                We are Web & Digital Product Developers with over 14 years of
+                experience creating websites and digital platforms for
+                businesses. We design and build modern, responsive web solutions
+                that combine clean development, thoughtful UX, and reliable
+                performance.
+              </p>
+              <p>
+                Our work includes business websites, landing pages, and
+                e-commerce projects built on platforms such as WordPress,
+                Shopify, and Tilda. We focus on turning design ideas into
+                polished, production-ready digital products that work seamlessly
+                across devices and browsers.
+              </p>
+              <p>
+                We believe that great web development should feel effortless for
+                users while delivering real value and growth for businesses.
+              </p>
+              <div class="about__highlights">
+                <div class="highlight">
+                  <strong>14+</strong>
+                  <span>Years in Frontend</span>
+                </div>
+                <div class="highlight">
+                  <strong>3</strong>
+                  <span>Core Specializations</span>
+                </div>
+                <div class="highlight">
+                  <strong>100%</strong>
+                  <span>Pixel-Perfect Focus</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SKILLS ===== -->
+      <section class="skills section" id="skills">
+        <div class="container">
+          <div class="section__label reveal">Expertise</div>
+          <h2 class="section__title reveal">Skills &amp; Tools</h2>
+          <div class="skills__grid">
+            <div class="skill-card reveal">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Core Languages</h3>
+              <ul class="skill-card__list">
+                <li>HTML5</li>
+                <li>CSS3 / SCSS</li>
+                <li>JavaScript (ES6+)</li>
+              </ul>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Frameworks &amp; Libraries</h3>
+              <ul class="skill-card__list">
+                <li>Vue.js 3</li>
+                <li>Vuex / Pinia</li>
+                <li>Vue Router</li>
+              </ul>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18" />
+                  <path d="M9 21V9" />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">CMS &amp; Platforms</h3>
+              <ul class="skill-card__list">
+                <li>WordPress</li>
+                <li>Shopify / Liquid</li>
+                <li>Figma to Code</li>
+              </ul>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Email Development</h3>
+              <ul class="skill-card__list">
+                <li>HTML Email / VML</li>
+                <li>Ghost Tables</li>
+                <li>Gmail, Outlook, Apple Mail</li>
+              </ul>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Responsive Design</h3>
+              <ul class="skill-card__list">
+                <li>Mobile-First Layouts</li>
+                <li>Cross-Browser Compat.</li>
+                <li>Accessibility Basics</li>
+              </ul>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="6" y1="3" x2="6" y2="15" />
+                  <circle cx="18" cy="6" r="3" />
+                  <circle cx="6" cy="18" r="3" />
+                  <path d="M18 9a9 9 0 0 1-9 9" />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Workflow &amp; Tools</h3>
+              <ul class="skill-card__list">
+                <li>Git / GitHub</li>
+                <li>Figma</li>
+                <li>VS Code</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PROJECTS ===== -->
+      <section class="projects section" id="projects">
+        <div class="container">
+          <div class="section__label reveal">Work</div>
+          <h2 class="section__title reveal">Selected Projects</h2>
+          <div class="projects__grid">
+            <article class="project-card reveal">
+              <div class="project-card__image">
+                <a
+                  href="https://nadjachernygina.github.io/BaliYogaRetreatLanding"
+                >
+                  <img
+                    src="assets/thumbnail-yoga.webp"
+                    alt="Screenshot of responsive HTML email templates"
+                    loading="lazy"
+                    width="640"
+                    height="420"
+                  />
+                </a>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__tag">Landing Page</span>
+
+                <h3 class="project-card__title">Bali Yoga Retreat</h3>
+
+                <p class="project-card__desc">
+                  Atmospheric landing page for a wellness retreat in Bali.
+                  Designed to create a calm and immersive experience with large
+                  visuals, smooth sections and mobile-friendly layout.
+                </p>
+
+                <div class="project-card__techs" aria-label="Technologies used">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card__image">
+                <a href="https://nadjachernygina.github.io/Pets-Grooming">
+                  <img
+                    src="assets/thumbnail-pet.webp"
+                    alt="Pet grooming website landing page for dog and cat grooming services"
+                    loading="lazy"
+                    width="640"
+                    height="420"
+                  />
+                </a>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__tag">Business Website</span>
+
+                <h3 class="project-card__title">Pets Grooming Service</h3>
+
+                <p class="project-card__desc">
+                  Friendly and colorful landing page for a pet grooming service.
+                  Focused on clear service presentation, strong call-to-action
+                  sections and responsive design for all devices.
+                </p>
+
+                <div class="project-card__techs" aria-label="Technologies used">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card__image">
+                <a href="https://nadjachernygina.github.io/Real-Estate-Landing">
+                  <img
+                    src="assets/thumbnail-villas.webp"
+                    alt="Luxury Bali villas real estate landing page design"
+                    loading="lazy"
+                    width="640"
+                    height="420"
+                  />
+                </a>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__tag">Landing Page</span>
+
+                <h3 class="project-card__title">Bali Real Estate</h3>
+
+                <p class="project-card__desc">
+                  Modern luxury real estate landing page designed for Bali villa
+                  sales and rentals. Features minimal architecture-inspired
+                  design, cinematic hero video, scroll animations, and elegant
+                  property presentation.
+                </p>
+
+                <div class="project-card__techs" aria-label="Technologies used">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section class="contact section" id="contact">
+        <div class="container contact__inner">
+          <div class="section__label reveal">Contact</div>
+          <h2 class="contact__heading reveal">
+            Let's build something<br /><em>great together.</em>
+          </h2>
+          <p class="contact__sub reveal">
+            Open to freelance projects, full-time roles, and interesting
+            collaborations.
+          </p>
+          <div class="contact__links reveal">
+            <a
+              href="mailto:nadja.Chernyginy@gmail.com"
+              class="contact__link contact__link--email"
+              aria-label="Send an email to Nadiia"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/NadjaChernygina"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact__link"
+              aria-label="Nadiia's GitHub profile"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                />
+              </svg>
+              GitHub
+            </a>
+            <!-- <a
+              href="https://www.linkedin.com/in/nadiia-Chernyginy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact__link"
+              aria-label="Nadiia's LinkedIn profile"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              LinkedIn
+            </a> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__copy">
+          &copy; <span id="year"></span> Chernyginy. All rights reserved.
+        </p>
+        <p class="footer__made">Crafted with care &amp; clean code.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
