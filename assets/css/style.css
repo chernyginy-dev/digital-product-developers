@@ -10,8 +10,8 @@
   --color-border: #e5e1da;
   --color-text: #1c1917;
   --color-text-muted: #6b6560;
-  --color-accent: #b87333;
-  --color-accent-pale: #f0e8df;
+  --color-accent: #0055aa;
+  --color-accent-pale: #ffffff;
 
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-body: "Outfit", system-ui, sans-serif;
@@ -253,8 +253,6 @@ h2 em {
   width: 100%;
 }
 
-
-
 /* Hamburger */
 .nav__toggle {
   display: none;
@@ -430,7 +428,7 @@ h2 em {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1;
-  color: var(--color-accent);
+  color: var(--color-accent-pale);
 }
 
 .hero__badge small {
@@ -739,7 +737,7 @@ h2 em {
 }
 
 .contact__heading em {
-  color: var(--color-accent);
+  color: var(--color-accent-pale);
 }
 
 .contact__sub {

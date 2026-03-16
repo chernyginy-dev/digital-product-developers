@@ -8,19 +8,41 @@
       content="Nadiia and Vira Chernyginy — Frontend Developer specializing in HTML, CSS, JavaScript, Vue, WordPress, Shopify, and Email Development."
     />
     <title>Nadiia and Vira Chernyginy — Frontend Developers</title>
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <!-- ===== NAVIGATION ===== -->
     <header class="site-header" id="site-header">
       <nav class="nav container" aria-label="Main navigation">
-        <a href="#hero" class="nav__logo">NV<span class="dot">.</span></a>
+        <a href="#hero" class="nav__logo" aria-label="Homepage">
+          <img
+            src="assets/images/chernyginy-frontend-developers-logo.png"
+            alt="Nadiia and Vira Chernyginy Frontend Developers logo"
+            width="30"
+            height="30"
+          />
+        </a>
         <button
           class="nav__toggle"
           id="nav-toggle"
@@ -61,7 +83,7 @@
           <div class="hero__image reveal">
             <div class="hero__image-wrap">
               <img
-                src="assets/photo_nadiia_vira.jpg"
+                src="assets/images/photo_nadiia_vira.jpg"
                 alt="Portrait of Nadiia Chernyginy, Frontend Developer"
                 width="480"
                 height="560"
@@ -176,8 +198,8 @@
               <h3 class="skill-card__title">Frameworks &amp; Libraries</h3>
               <ul class="skill-card__list">
                 <li>Vue.js 3</li>
-                <li>Vuex / Pinia</li>
-                <li>Vue Router</li>
+                <li>React</li>
+                <li>node.js</li>
               </ul>
             </div>
 
@@ -202,7 +224,7 @@
               <ul class="skill-card__list">
                 <li>WordPress</li>
                 <li>Shopify / Liquid</li>
-                <li>Figma to Code</li>
+                <li>WP Woocomerce / LMS</li>
               </ul>
             </div>
 
@@ -300,7 +322,7 @@
                   href="https://nadjachernygina.github.io/BaliYogaRetreatLanding"
                 >
                   <img
-                    src="assets/thumbnail-yoga.webp"
+                    src="assets/images/thumbnail-yoga.webp"
                     alt="Screenshot of responsive HTML email templates"
                     loading="lazy"
                     width="640"
@@ -329,7 +351,7 @@
               <div class="project-card__image">
                 <a href="https://nadjachernygina.github.io/Pets-Grooming">
                   <img
-                    src="assets/thumbnail-pet.webp"
+                    src="assets/images/thumbnail-pet.webp"
                     alt="Pet grooming website landing page for dog and cat grooming services"
                     loading="lazy"
                     width="640"
@@ -358,7 +380,7 @@
               <div class="project-card__image">
                 <a href="https://nadjachernygina.github.io/Real-Estate-Landing">
                   <img
-                    src="assets/thumbnail-villas.webp"
+                    src="assets/images/thumbnail-villas.webp"
                     alt="Luxury Bali villas real estate landing page design"
                     loading="lazy"
                     width="640"
@@ -402,7 +424,7 @@
           </p>
           <div class="contact__links reveal">
             <a
-              href="mailto:nadja.Chernyginy@gmail.com"
+              href="mailto:nadja.chernyginy@gmail.com"
               class="contact__link contact__link--email"
               aria-label="Send an email to Nadiia"
             >
@@ -424,7 +446,7 @@
               </svg>
             </a>
             <a
-              href="https://github.com/NadjaChernygina"
+              href="https://github.com/chernyginy-dev"
               target="_blank"
               rel="noopener noreferrer"
               class="contact__link"
@@ -488,6 +510,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
