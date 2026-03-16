@@ -759,7 +759,7 @@ h2 em {
   gap: 0.6rem;
   font-size: 0.875rem;
   font-weight: 400;
-  padding: 0.85rem 1.6rem;
+  padding: 1rem;
   border-radius: 100px;
   border: 1.5px solid rgba(245, 243, 239, 0.15);
   color: rgba(245, 243, 239, 0.8);
@@ -772,22 +772,10 @@ h2 em {
 }
 
 .contact__link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(245, 243, 239, 0.4);
-  color: var(--color-bg);
-  transform: translateY(-2px);
-}
-
-.contact__link--email {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
   color: var(--color-bg);
-}
-
-.contact__link--email:hover {
-  background-color: #a3632c;
-  border-color: #a3632c;
-  color: var(--color-bg);
+  transform: translateY(-2px);
 }
 
 /* ── FOOTER ─────────────────────────────────── */
@@ -925,8 +913,6 @@ h2 em {
 
   /* Contact */
   .contact__links {
-    flex-direction: column;
-    align-items: flex-start;
     margin: 0 auto;
   }
 
