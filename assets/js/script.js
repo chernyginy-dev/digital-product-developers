@@ -149,6 +149,23 @@ document.querySelectorAll(".skills__grid, .projects__grid").forEach((grid) => {
   staggerObserver.observe(grid);
 });
 
+/* ============================================================
+     2. LANGUAGE TOGGLE BUTTONS
+     Replaces: onclick="location.href = 'index.html'"
+               onclick="location.href = 'index-en.html'"
+  ============================================================ */
+const langMap = {
+  uk: "index.html",
+  en: "index-en.html",
+};
+
+document.querySelectorAll(".lang-btn[data-lang]").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const target = langMap[btn.dataset.lang];
+    if (target) location.href = target;
+  });
+});
+
 /* ── SMOOTH SCROLL POLYFILL (for older Safari) ── */
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {

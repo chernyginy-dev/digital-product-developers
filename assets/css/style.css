@@ -6,7 +6,7 @@
 /* ── DESIGN TOKENS ──────────────────────────── */
 :root {
   --color-bg: #f5f3ef;
-  --color-surface: #ffffff;
+  --color-white: #ffffff;
   --color-border: #e5e1da;
   --color-text: #1c1917;
   --color-text-muted: #6b6560;
@@ -172,7 +172,7 @@ h2 em {
   transform: translateY(-2px);
 }
 
-/* ── NAVIGATION ─────────────────────────────── */
+/* ── HEADER ─────────────────────────────── */
 .site-header {
   position: fixed;
   top: 0;
@@ -193,11 +193,18 @@ h2 em {
   box-shadow: 0 1px 0 var(--color-border);
 }
 
+.header-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 68px;
 }
 
 .nav__logo {
@@ -258,12 +265,13 @@ h2 em {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 26px;
+  min-width: 26px;
   height: 18px;
   background: none;
   border: none;
   cursor: pointer;
   padding: 0;
+  margin-left: 30px;
 }
 
 .nav__toggle span {
@@ -288,6 +296,36 @@ h2 em {
 
 .nav__toggle.open span:nth-child(3) {
   transform: translateY(-8.25px) rotate(-45deg);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  min-height: 68px;
+}
+
+/* lang-toggle */
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+}
+.lang-btn {
+  padding: 7px 13px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--stone);
+  transition: all 0.2s;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 3px;
+}
+.lang-btn.on {
+  background: var(--color-accent);
+  color: var(--color-white);
 }
 
 /* ── HERO ───────────────────────────────────── */
@@ -555,7 +593,7 @@ h2 em {
 
 /* ── SKILLS ─────────────────────────────────── */
 .skills {
-  background-color: var(--color-surface);
+  background-color: var(--color-white);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
@@ -626,7 +664,7 @@ h2 em {
 }
 
 .project-card {
-  background-color: var(--color-surface);
+  background-color: var(--color-white);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   overflow: hidden;
