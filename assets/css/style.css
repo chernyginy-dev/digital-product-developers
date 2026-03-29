@@ -5,12 +5,12 @@
 
 /* ── DESIGN TOKENS ──────────────────────────── */
 :root {
-  --color-bg: #f5f3ef;
+  --color-bg: #ffffff;
   --color-white: #ffffff;
   --color-border: #e5e1da;
   --color-text: #1c1917;
   --color-text-muted: #6b6560;
-  --color-accent: #0055aa;
+  --color-accent: #095285;
   --color-accent-pale: #ffffff;
 
   --font-display: "Cormorant Garamond", Georgia, serif;
@@ -181,15 +181,12 @@ h2 em {
   z-index: 100;
   background-color: transparent;
   transition:
-    background-color var(--transition),
     box-shadow var(--transition),
     backdrop-filter var(--transition);
 }
 
 .site-header.scrolled {
-  background-color: rgba(245, 243, 239, 0.88);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background-color: var(--color-bg);
   box-shadow: 0 1px 0 var(--color-border);
 }
 
@@ -208,12 +205,7 @@ h2 em {
 }
 
 .nav__logo {
-  font-family: var(--font-display-pale);
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  color: var(--color-text);
-  transition: color var(--transition);
+  width: 200px;
 }
 
 .nav__logo .dot {
