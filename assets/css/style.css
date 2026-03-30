@@ -10,7 +10,7 @@
   --color-border: #e5e1da;
   --color-text: #1c1917;
   --color-text-muted: #6b6560;
-  --color-accent: #095285;
+  --color-accent: #003d8b;
   --color-accent-pale: #ffffff;
 
   --font-display: "Cormorant Garamond", Georgia, serif;
@@ -205,7 +205,7 @@ h2 em {
 }
 
 .nav__logo {
-  width: 200px;
+  width: 226px;
 }
 
 .nav__logo .dot {
