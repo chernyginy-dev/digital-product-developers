@@ -104,42 +104,71 @@
     <main>
       <!-- ===== HERO ===== -->
       <section class="hero" id="hero">
+        <!-- VIDEO BACKGROUND -->
+        <div class="hero__video-wrap" aria-hidden="true">
+          <video
+            class="hero__video"
+            poster="assets/images/photo_nadiia_vira.jpg"
+            muted
+            autoplay
+            loop
+            playsinline
+            preload="auto"
+          >
+            <source src="assets/videos/hero-bg.mp4" type="video/mp4" />
+          </video>
+          <div class="hero__overlay"></div>
+        </div>
+
+        <!-- CONTENT -->
         <div class="container hero__inner">
           <div class="hero__text">
-            <p class="hero__eyebrow reveal">
-              Фронтенд розробники для бізнес-сайтів і лендингів
+            <p class="hero__eyebrow hero-anim hero-anim--1">
+              <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+              Фронтенд-студія · Клієнти по всьому світу
             </p>
-            <h1 class="hero__name reveal">
-              Надія та Віра<br /><em>Чернигіни</em>
+
+            <h1 class="hero__name hero-anim hero-anim--2">
+              Ми створюємо вебсайти<br />
+              <em>які продають.</em>
             </h1>
-            <p class="hero__intro reveal">
-              <b>Ми створюємо цифрові продукти, а не просто сайти</b><br />
-              Розробляємо швидкі, зручні та ефективні сайти для малого бізнесу,
-              особистих брендів і компаній, що розвиваються.
+
+            <p class="hero__intro hero-anim hero-anim--3">
+              Надія та Віра Чернигини — frontend дует із понад 14-річним
+              досвідом, який створює швидкі, бездоганні до пікселя цифрові
+              продукти для бізнесів, що серйозно ставляться до своєї
+              онлайн-присутності.
             </p>
-            <div class="hero__actions reveal">
-              <a href="#projects" class="btn btn--primary">Наші роботи</a>
+
+            <div class="hero__actions hero-anim hero-anim--4">
+              <a href="#projects" class="btn btn--primary"
+                >Приклади наших робіт</a
+              >
               <a href="#contact" class="btn btn--ghost">Зв'язатися з нами</a>
             </div>
-          </div>
-          <div class="hero__image reveal">
-            <div class="hero__image-wrap">
-              <img
-                src="assets/images/photo_nadiia_vira.jpg"
-                alt="Надія та Віра Чернигіни, frontend developers"
-                width="480"
-                height="560"
-                loading="eager"
-              />
-            </div>
-            <div class="hero__badge" aria-hidden="true">
-              <span>14+</span>
-              <small>Років<br />Досвіду</small>
+
+            <!-- TRUST BAR -->
+            <div class="hero__trust hero-anim hero-anim--5" aria-hidden="true">
+              <div class="hero__trust-item">
+                <strong>14+</strong>
+                <span>Років досвіду</span>
+              </div>
+              <div class="hero__trust-divider"></div>
+              <div class="hero__trust-item">
+                <strong>Креативний</strong>
+                <span>сучасний дизайн</span>
+              </div>
+              <div class="hero__trust-divider"></div>
+              <div class="hero__trust-item">
+                <strong>Сучасний стек</strong>
+                <span>React, Webflow, WordPress</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="hero__scroll" aria-hidden="true">
-          <span>Scroll</span>
+
+        <!-- SCROLL INDICATOR -->
+        <div class="hero__scroll hero-anim hero-anim--6" aria-hidden="true">
           <div class="hero__scroll-line"></div>
         </div>
       </section>
