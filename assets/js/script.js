@@ -154,6 +154,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 /* ── VIDEO AUTOPLAY FALLBACK (Chrome policy guard) ── */
 const heroVideo = document.querySelector(".hero__video");
 if (heroVideo) {
+  heroVideo.muted = true;
+  heroVideo.setAttribute("playsinline", "");
   heroVideo.play().catch(() => {
     // Autoplay blocked — poster image already showing, nothing to do
   });
