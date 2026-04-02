@@ -1,6 +1,6 @@
 /**
  * script.js
- * Nadiia Chernygina — Portfolio Scripts
+ * Twin Site Creator — Nadiia & Vira Chernyginy
  * Plain vanilla JS — no dependencies
  */
 
@@ -49,12 +49,10 @@ function toggleMenu(forceClose = false) {
 
 navToggle.addEventListener("click", () => toggleMenu());
 
-/* Close menu when a nav link is clicked */
 navLinks.forEach((link) => {
   link.addEventListener("click", () => toggleMenu(true));
 });
 
-/* Close menu on outside click */
 document.addEventListener("click", (e) => {
   if (
     navMenu.classList.contains("is-open") &&
@@ -65,7 +63,6 @@ document.addEventListener("click", (e) => {
   }
 });
 
-/* Close menu on Escape */
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && navMenu.classList.contains("is-open")) {
     toggleMenu(true);
@@ -73,7 +70,7 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-/* ── ACTIVE NAV LINK (INTERSECTION) ────────────*/
+/* ── ACTIVE NAV LINK ────────────────────────── */
 const sections = document.querySelectorAll("section[id]");
 
 function updateActiveLink() {
@@ -99,12 +96,10 @@ const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
-        // Stagger siblings within the same parent
         const siblings = entry.target.parentElement.querySelectorAll(
           ".reveal:not(.is-visible)",
         );
-        siblings.forEach((el, idx) => {
-          // Only stagger if this element is among those in view
+        siblings.forEach((el) => {
           if (el === entry.target) {
             entry.target.style.transitionDelay = `${i * 0.06}s`;
           }
@@ -114,10 +109,7 @@ const revealObserver = new IntersectionObserver(
       }
     });
   },
-  {
-    threshold: 0.12,
-    rootMargin: "0px 0px -40px 0px",
-  },
+  { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
 );
 
 document.querySelectorAll(".reveal").forEach((el) => {
@@ -125,10 +117,6 @@ document.querySelectorAll(".reveal").forEach((el) => {
 });
 
 /* ── STAGGERED REVEAL FOR GRIDS ─────────────── */
-/**
- * Cards inside grids get an incremental delay so they
- * cascade nicely instead of all popping in at once.
- */
 const staggerObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -149,24 +137,7 @@ document.querySelectorAll(".skills__grid, .projects__grid").forEach((grid) => {
   staggerObserver.observe(grid);
 });
 
-/* ============================================================
-     2. LANGUAGE TOGGLE BUTTONS
-     Replaces: onclick="location.href = 'index.html'"
-               onclick="location.href = 'index-en.html'"
-  ============================================================ */
-const langMap = {
-  uk: "index.html",
-  en: "index-en.html",
-};
-
-document.querySelectorAll(".lang-btn[data-lang]").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const target = langMap[btn.dataset.lang];
-    if (target) location.href = target;
-  });
-});
-
-/* ── SMOOTH SCROLL POLYFILL (for older Safari) ── */
+/* ── SMOOTH SCROLL (older Safari polyfill) ──── */
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     const targetId = this.getAttribute("href");
@@ -174,7 +145,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     const target = document.querySelector(targetId);
     if (!target) return;
     e.preventDefault();
-    const offset = 72; // header height
+    const offset = 72;
     const top = target.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({ top, behavior: "smooth" });
   });
