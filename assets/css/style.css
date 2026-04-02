@@ -352,9 +352,6 @@ h2 em {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  /* slight scale-up so edges never flash on resize */
-  transform: scale(1.04);
-  will-change: transform;
 }
 
 /* Dark cinematic overlay — gradient gives depth, not flatness */
