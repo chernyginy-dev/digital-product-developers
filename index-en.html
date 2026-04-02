@@ -106,42 +106,69 @@
 
     <main>
       <!-- ===== HERO ===== -->
+      <!-- UPDATED HERO — Twin Site Creator | Video BG Edition -->
       <section class="hero" id="hero">
+        <!-- VIDEO BACKGROUND -->
+        <div class="hero__video-wrap" aria-hidden="true">
+          <video
+            class="hero__video"
+            src="assets/videos/hero-bg.mp4"
+            poster="assets/images/photo_nadiia_vira.jpg"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+          ></video>
+          <div class="hero__overlay"></div>
+        </div>
+
+        <!-- CONTENT -->
         <div class="container hero__inner">
           <div class="hero__text">
-            <p class="hero__eyebrow reveal">
-              Custom Websites & Landing Pages for Growing Businesses
+            <p class="hero__eyebrow hero-anim hero-anim--1">
+              <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+              Frontend Studio · Bali-based · Worldwide Clients
             </p>
-            <h1 class="hero__name reveal">
-              Nadiia and Vira<br /><em>Chernyginy</em>
+
+            <h1 class="hero__name hero-anim hero-anim--2">
+              We build websites<br />
+              <em>that convert.</em>
             </h1>
-            <p class="hero__intro reveal">
-              <b>Your website should work as hard as you do</b><br />
-              We design and build fast, conversion-focused digital products for
-              small businesses, personal brands, and ambitious companies.
+
+            <p class="hero__intro hero-anim hero-anim--3">
+              Nadiia &amp; Vira Chernyginy — a frontend duo with 14+ years of
+              experience crafting fast, pixel-perfect digital products for
+              businesses that take their online presence seriously.
             </p>
-            <div class="hero__actions reveal">
-              <a href="#projects" class="btn btn--primary">View Work</a>
+
+            <div class="hero__actions hero-anim hero-anim--4">
+              <a href="#projects" class="btn btn--primary">View Projects</a>
               <a href="#contact" class="btn btn--ghost">Get in Touch</a>
             </div>
-          </div>
-          <div class="hero__image reveal">
-            <div class="hero__image-wrap">
-              <img
-                src="assets/images/photo_nadiia_vira.jpg"
-                alt="Nadiia and Vira Chernyginy, frontend developers"
-                width="480"
-                height="560"
-                loading="eager"
-              />
-            </div>
-            <div class="hero__badge" aria-hidden="true">
-              <span>14+</span>
-              <small>Years<br />Experience</small>
+
+            <!-- TRUST BAR -->
+            <div class="hero__trust hero-anim hero-anim--5" aria-hidden="true">
+              <div class="hero__trust-item">
+                <strong>14+</strong>
+                <span>Years Experience</span>
+              </div>
+              <div class="hero__trust-divider"></div>
+              <div class="hero__trust-item">
+                <strong>100%</strong>
+                <span>Pixel-Perfect</span>
+              </div>
+              <div class="hero__trust-divider"></div>
+              <div class="hero__trust-item">
+                <strong>3</strong>
+                <span>Platforms Mastered</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="hero__scroll" aria-hidden="true">
+
+        <!-- SCROLL INDICATOR -->
+        <div class="hero__scroll hero-anim hero-anim--6" aria-hidden="true">
           <span>Scroll</span>
           <div class="hero__scroll-line"></div>
         </div>
