@@ -12,8 +12,9 @@
   --color-text-muted: #6b6560;
   --color-accent: #003d8b;
   --color-accent-pale: #ffffff;
+  --color-accent-secondary: rgb(210, 189, 65);
 
-  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Rubik", sans-serif;
   --font-body: "Outfit", system-ui, sans-serif;
 
   --radius-sm: 8px;
@@ -202,6 +203,7 @@ h2 em {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 0 0 48px;
 }
 
 .nav__logo {
@@ -251,6 +253,7 @@ h2 em {
 
 .nav__link {
   font-size: 0.85rem;
+  font-family: var(--font-display);
   font-weight: 400;
   letter-spacing: 0.04em;
   color: var(--color-white);
@@ -332,9 +335,15 @@ h2 em {
 .lang-toggle {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  position: fixed;
+  right: 11px;
+  top: 76px;
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--color-accent) 70%, transparent);
 }
 .lang-btn {
-  padding: 7px 13px;
+  padding: 10px;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -343,17 +352,10 @@ h2 em {
   cursor: pointer;
   background: none;
   border: none;
-  border-radius: 3px;
 }
 
-.site-header.scrolled .lang-btn {
-  color: var(--color-text);
-}
-
-.site-header.scrolled .lang-btn.on,
 .lang-btn.on {
-  background: var(--color-accent);
-  color: var(--color-white);
+  color: var(--color-accent-secondary);
 }
 
 /* ============================================================
@@ -371,6 +373,10 @@ h2 em {
   overflow: hidden;
   background: #0a0a0a; /* fallback while video loads */
   color: #fff;
+}
+
+.hero__text {
+  text-align: center;
 }
 
 /* ── VIDEO LAYER ─────────────────────────────────────────── */
@@ -399,9 +405,9 @@ h2 em {
   inset: 0;
   background: linear-gradient(
     110deg,
-    rgba(0, 0, 0, 0.72) 0%,
-    rgba(0, 0, 0, 0.46) 55%,
-    rgba(0, 0, 0, 0.3) 100%
+    rgba(0, 61, 139, 0.576) 0%,
+    rgba(0, 61, 139, 0.368) 55%,
+    rgba(0, 61, 139, 0.24) 100%
   );
 }
 
@@ -421,6 +427,7 @@ h2 em {
 .hero__eyebrow {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   font-family: "Outfit", sans-serif;
   font-size: 0.78rem;
@@ -436,7 +443,7 @@ h2 em {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #c8a96e; /* warm gold accent */
+  background: var(--color-accent-secondary); /* warm gold accent */
   flex-shrink: 0;
   /* pulse glow */
   animation: dotPulse 2.4s ease-in-out infinite;
@@ -456,28 +463,28 @@ h2 em {
 
 /* ── H1 ──────────────────────────────────────────────────── */
 .hero__name {
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: var(--font-display);
   font-size: clamp(3rem, 7vw, 5.6rem);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.05;
   letter-spacing: -0.02em;
   color: #fff;
   margin-bottom: 1.6rem;
 }
 
-.hero__name em {
-  font-style: italic;
-  color: #c8a96e; /* gold italic — premium accent */
+.hero__name span {
+  font-style: normal;
+  font-weight: 300;
+  color: var(--color-accent-secondary); /* gold italic — premium accent */
 }
 
 /* ── INTRO / SUBHEADLINE ─────────────────────────────────── */
 .hero__intro {
-  font-family: "Outfit", sans-serif;
+  font-family: var(--font-display);
   font-size: clamp(1rem, 1.8vw, 1.15rem);
   font-weight: 300;
   line-height: 1.75;
   color: rgba(255, 255, 255, 0.72);
-  max-width: 520px;
   margin-bottom: 2.4rem;
 }
 
@@ -491,6 +498,7 @@ h2 em {
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 14px;
   margin-bottom: 3rem;
 }
@@ -501,7 +509,7 @@ h2 em {
   align-items: center;
   gap: 8px;
   padding: 0.82em 2em;
-  background: #c8a96e;
+  background: var(--color-white);
   color: #0a0a0a;
   font-family: "Outfit", sans-serif;
   font-size: 0.9rem;
@@ -509,7 +517,7 @@ h2 em {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   border: none;
-  border-radius: 3px;
+  border-radius: 26px;
   cursor: pointer;
   text-decoration: none;
   transition:
@@ -541,7 +549,7 @@ h2 em {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   border: 1px solid rgba(255, 255, 255, 0.28);
-  border-radius: 3px;
+  border-radius: 26px;
   cursor: pointer;
   text-decoration: none;
   transition:
@@ -560,6 +568,7 @@ h2 em {
 .hero__trust {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 24px;
   padding-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
@@ -568,14 +577,15 @@ h2 em {
 .hero__trust-item {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 3px;
 }
 
 .hero__trust-item strong {
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--font-display);
   font-size: 1.6rem;
   font-weight: 600;
-  color: #c8a96e;
+  color: var(--color-accent-secondary);
   line-height: 1;
 }
 
@@ -631,7 +641,7 @@ h2 em {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #c8a96e;
+  background: var(--color-accent-secondary);
   animation: scrollDrop 2s ease-in-out infinite;
 }
 
@@ -709,10 +719,6 @@ h2 em {
     padding-top: 7rem;
     padding-bottom: 6rem;
     max-width: 100%;
-  }
-
-  .hero__overlay {
-    background: rgba(0, 0, 0, 0.62); /* a touch more opaque on mobile */
   }
 
   .hero__trust {
@@ -1188,29 +1194,31 @@ h2 em {
 }
 
 .contact .section__label {
-  color: rgba(184, 115, 51, 0.85);
+  color: rgba(0, 102, 204, 0.96);
 }
 
 .contact__heading {
   font-family: var(--font-display);
   font-size: clamp(2.4rem, 5.5vw, 4.5rem);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--color-bg);
 }
 
-.contact__heading em {
+.contact__heading span {
   color: var(--color-accent-pale);
+  font-weight: 300;
 }
 
 .contact__sub {
   font-size: 1rem;
-  color: rgba(245, 243, 239, 0.55);
+  color: var(--color-white);
   max-width: 420px;
 }
 
 .contact__links {
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -1330,7 +1338,6 @@ h2 em {
   }
 
   .hero__text {
-    align-items: center;
     order: 2;
   }
 
@@ -1375,11 +1382,6 @@ h2 em {
 
   .about__highlights {
     gap: 1.5rem;
-  }
-
-  /* Contact */
-  .contact__links {
-    margin: 0 auto;
   }
 
   .contact__link {
