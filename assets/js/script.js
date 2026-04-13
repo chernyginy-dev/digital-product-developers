@@ -160,3 +160,19 @@ if (heroVideo) {
     // Autoplay blocked — poster image already showing, nothing to do
   });
 }
+
+const btn = document.querySelector(".back-to-top");
+
+btn.addEventListener("click", () => {
+  // плавний скрол
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+
+  history.pushState(
+    "",
+    document.title,
+    window.location.pathname + window.location.search,
+  );
+});

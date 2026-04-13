@@ -1429,3 +1429,86 @@ h2 em {
     transform: none;
   }
 }
+
+/* Контейнер кнопки */
+.back-to-top {
+  position: fixed;
+  right: 11px;
+  bottom: 24px;
+  width: 48px;
+  height: 48px;
+
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  /* glass effect */
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.35s ease;
+
+  z-index: 999;
+}
+
+/* Hover ефект */
+.back-to-top:hover {
+  transform: translateY(-6px) scale(1.05);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Натиск */
+.back-to-top:active {
+  transform: scale(0.95);
+}
+
+/* Стрілка */
+.back-to-top .arrow {
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #003d8b;
+  border-bottom: 2px solid #003d8b;
+  transform: rotate(135deg);
+  transition: transform 0.3s ease;
+}
+
+/* 🔥 Супер-анімація (пульс + “енергія”) */
+.back-to-top::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 61, 139, 0.25), transparent 70%);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.4s ease;
+}
+
+.back-to-top:hover::after {
+  opacity: 1;
+  transform: scale(1.4);
+}
+
+/* ✨ Floating animation (дуже subtle) */
+@keyframes floaty {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.back-to-top {
+  animation: floaty 3s ease-in-out infinite;
+}
