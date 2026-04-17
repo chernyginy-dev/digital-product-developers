@@ -83,6 +83,10 @@ a {
   padding-block: clamp(2rem, 5vw, 3rem);
 }
 
+.section__text {
+  margin-bottom: 2rem;
+}
+
 .section__label {
   font-family: var(--font-body);
   font-size: 0.7rem;
@@ -99,7 +103,7 @@ a {
   font-weight: 600;
   line-height: 1.15;
   color: var(--color-text);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .section__title em,
@@ -420,7 +424,7 @@ h2 em {
   align-items: center;
   padding-top: 9rem;
   padding-bottom: 7rem;
-  max-width: 780px; /* keep copy tight and readable */
+  max-width: 880px; /* keep copy tight and readable */
 }
 
 /* ── EYEBROW ─────────────────────────────────────────────── */
@@ -474,18 +478,23 @@ h2 em {
 
 .hero__name span {
   font-style: normal;
+  font-size: 3rem;
   font-weight: 300;
   color: var(--color-accent-secondary); /* gold italic — premium accent */
 }
 
 /* ── INTRO / SUBHEADLINE ─────────────────────────────────── */
 .hero__intro {
+  padding: 5px 0 20px;
+}
+
+.hero__intro p {
   font-family: var(--font-display);
   font-size: clamp(1rem, 1.8vw, 1.15rem);
   font-weight: 300;
   line-height: 1.75;
   color: rgba(255, 255, 255, 0.72);
-  margin-bottom: 2.4rem;
+  margin-bottom: 0.8rem;
 }
 
 /* Remove bold from the old <b> tag if it remains */
@@ -1511,4 +1520,32 @@ h2 em {
 
 .back-to-top {
   animation: floaty 3s ease-in-out infinite;
+}
+
+/* FAQ */
+.faq__list {
+  max-width: 800px;
+}
+
+.faq__item {
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.faq__item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.faq__item p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* optional hover (modern feel) */
+.faq__item:hover h3 {
+  opacity: 0.7;
+  transition: 0.3s ease;
 }
