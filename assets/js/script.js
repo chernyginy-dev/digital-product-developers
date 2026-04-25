@@ -161,21 +161,29 @@ if (heroVideo) {
   });
 }
 
-const btn = document.querySelector(".back-to-top");
+/* ─── Back To Top ─── */
+function initBackToTop() {
+  const btn = document.getElementById("backToTop");
+  if (!btn) return;
 
-btn.addEventListener("click", () => {
-  // плавний скрол
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-
-  history.pushState(
-    "",
-    document.title,
-    window.location.pathname + window.location.search,
+  let ticking = false;
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (ticking) return;
+      requestAnimationFrame(() => {
+        btn.classList.toggle("visible", window.scrollY > 500);
+        ticking = false;
+      });
+      ticking = true;
+    },
+    { passive: true },
   );
-});
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
 
 document.querySelectorAll(".faq__question").forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -191,4 +199,9 @@ document.querySelectorAll(".faq__question").forEach((btn) => {
       answer.style.maxHeight = null;
     }
   });
+});
+
+/* ─── Init All ─── */
+document.addEventListener("DOMContentLoaded", () => {
+  initBackToTop();
 });
