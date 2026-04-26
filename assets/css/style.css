@@ -1608,6 +1608,10 @@ h2 em {
   transform: rotate(180deg);
 }
 
+.faq__question h3 {
+  color: var(--color-accent);
+}
+
 /* ANSWER */
 .faq__answer {
   max-height: 0;
