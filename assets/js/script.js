@@ -205,3 +205,51 @@ document.querySelectorAll(".faq__question").forEach((btn) => {
 document.addEventListener("DOMContentLoaded", () => {
   initBackToTop();
 });
+
+const cookie = document.getElementById("cookie");
+const accept = document.getElementById("cookieAccept");
+const decline = document.getElementById("cookieDecline");
+
+const consent = localStorage.getItem("cookieConsent");
+
+// показ банера
+if (!consent) {
+  setTimeout(() => {
+    cookie.classList.add("active");
+  }, 800);
+}
+
+// якщо вже accept — одразу запускаємо GA
+if (consent === "accepted") {
+  loadAnalytics();
+}
+
+// accept
+accept.addEventListener("click", () => {
+  localStorage.setItem("cookieConsent", "accepted");
+  cookie.classList.remove("active");
+  loadAnalytics();
+});
+
+// decline
+decline.addEventListener("click", () => {
+  localStorage.setItem("cookieConsent", "declined");
+  cookie.classList.remove("active");
+});
+
+function loadAnalytics() {
+  if (window.gaLoaded) return;
+  window.gaLoaded = true;
+
+  const script = document.createElement("script");
+  script.src = "https://www.googletagmanager.com/gtag/js?id=G-CQWCQ5EF1Y";
+  script.async = true;
+  document.head.appendChild(script);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "G-CQWCQ5EF1Y");
+}
