@@ -3,7 +3,7 @@
 A personal frontend portfolio showcasing selected web development projects and practical experience in building modern websites and digital products.
 
 🔗 **Live Demo:**
-https://chernyginy-dev.github.io/digital-product-developers
+https://twinsitecreator.com/
 
 ---
 
@@ -36,29 +36,6 @@ The design focuses on simplicity, readability, and smooth navigation, allowing v
 
 ---
 
-## Project Structure
-
-```
-frontend-portfolio
-│
-├── index.html
-├── css/
-├── js/
-├── images/
-└── assets/
-```
-
----
-
 ## Purpose
 
 This project serves as a personal frontend portfolio and a central place to present selected projects, demonstrate development skills, and provide access to live demos and source code.
-
----
-
-## Author
-
-**Nadiia Chernygina**
-
-- GitHub: https://github.com/NadjaChernygina
-- LinkedIn: https://www.linkedin.com/in/nadiia-chernygina/
