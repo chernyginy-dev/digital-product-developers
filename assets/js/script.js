@@ -133,7 +133,7 @@ const staggerObserver = new IntersectionObserver(
   { threshold: 0.05 },
 );
 
-document.querySelectorAll(".skills__grid, .projects__grid").forEach((grid) => {
+document.querySelectorAll(".projects__grid").forEach((grid) => {
   staggerObserver.observe(grid);
 });
 
@@ -253,3 +253,22 @@ function loadAnalytics() {
   gtag("js", new Date());
   gtag("config", "G-CQWCQ5EF1Y");
 }
+
+const skillsSection = document.querySelector(".skills");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        skillsSection.classList.add("is-visible");
+      } else {
+        skillsSection.classList.remove("is-visible"); // 🔥 ключ до повтору
+      }
+    });
+  },
+  {
+    threshold: 0.25,
+  },
+);
+
+observer.observe(skillsSection);

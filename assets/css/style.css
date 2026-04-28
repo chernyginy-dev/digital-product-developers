@@ -909,6 +909,91 @@ h2 em {
   color: var(--color-accent);
 }
 
+/* ── animation for SKILLS ─────────────────────────────────── */
+
+/* ===== BUBBLE BASE ===== */
+.skill-card {
+  opacity: 0;
+  transform: scale(0.7) translateY(30px);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+
+.skill-card:nth-child(odd) {
+  animation-duration: 0.8s;
+}
+
+/* ===== ACTIVE STATE ===== */
+.skills.is-visible .skill-card {
+  animation: bubbleIn 0.7s forwards;
+}
+
+@keyframes bubbleIn {
+  0% {
+    transform: scale(0.65) translateY(40px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.08) translateY(-8px);
+    opacity: 1;
+  }
+
+  75% {
+    transform: scale(0.98) translateY(2px);
+  }
+
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+.skill-card:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.skill-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.skill-card:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.skill-card:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.skill-card:nth-child(5) {
+  animation-delay: 0.25s;
+}
+.skill-card:nth-child(6) {
+  animation-delay: 0.3s;
+}
+
+.skill-card {
+  will-change: transform;
+  transform-origin: center;
+}
+
+.skill-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.25),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.skills.is-visible .skill-card::after {
+  opacity: 1;
+}
+
 /* ── PROJECTS ───────────────────────────────── */
 .projects__grid {
   display: grid;
