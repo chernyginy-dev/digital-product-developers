@@ -59,6 +59,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/gallery.css" />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -221,6 +222,52 @@
         }
       }
     </script>
+
+    <!-- Portfolio ItemList Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Портфоліо landing page та сайтів — Twin Site Creator",
+        "description": "Приклади розробки landing page та бізнес-сайтів на WordPress, Shopify і React. Twin Site Creator — 14+ років, 200+ проєктів.",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Landing page для йога-ретриту — Балі",
+              "url": "https://twinsite-creation.github.io/yoga-retreat-landing/",
+              "image": "https://twinsitecreator.com/assets/images/thumbnail-yoga.webp",
+              "author": { "@type": "Organization", "name": "Twin Site Creator" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Бізнес-сайт для pet grooming студії",
+              "url": "https://twinsite-creation.github.io/pet-grooming-landing/",
+              "image": "https://twinsitecreator.com/assets/images/thumbnail-pet.webp",
+              "author": { "@type": "Organization", "name": "Twin Site Creator" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Преміум-сайт для оренди та продажу вілл — Балі",
+              "url": "https://twinsite-creation.github.io/luxury-villa-landing/",
+              "image": "https://twinsitecreator.com/assets/images/thumbnail-villas.webp",
+              "author": { "@type": "Organization", "name": "Twin Site Creator" }
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- ===== NAVIGATION ===== -->
@@ -333,8 +380,571 @@
         </div>
 
         <!-- SCROLL INDICATOR -->
-        <div class="hero__scroll hero-anim hero-anim--6" aria-hidden="true">
-          <div class="hero__scroll-line"></div>
+        <a href="#portfolioHeader" class="hero__scroll hero-anim hero-anim--6">
+          <span class="hero__scroll-arrow"></span>
+        </a>
+      </section>
+
+      <!-- ===== PROJECTS — Animated Gallery ===== -->
+      <section class="portfolio section" id="projects" aria-label="Портфоліо">
+        <div class="container">
+          <!-- HEADER -->
+          <header class="portfolio-header" id="portfolioHeader">
+            <div>
+              <p class="portfolio-header__label">Портфоліо · Наші роботи</p>
+              <h2 class="portfolio-header__title">
+                Landing page та сайти,<br />
+                <span>які приносять клієнтів</span>
+              </h2>
+            </div>
+            <div class="portfolio-header__meta">
+              <div class="portfolio-header__count">200+</div>
+              <div class="portfolio-header__count-label">
+                Реалізованих проєктів
+              </div>
+            </div>
+          </header>
+
+          <!-- INTRO -->
+          <div class="portfolio-intro" id="portfolioIntro">
+            <p>
+              Реальні приклади розробки landing page та бізнес-сайтів — від
+              велнес-студій до нерухомості преміум-класу. Кожен проєкт вирішує
+              конкретне бізнес-завдання: залучення заявок, підвищення конверсії,
+              ріст онлайн-продажів.
+            </p>
+            <p>
+              Розробляємо на WordPress, Shopify і React — залежно від цілей і
+              бюджету клієнта.
+            </p>
+          </div>
+
+          <!-- GALLERY GRID -->
+          <div class="gallery" id="gallery">
+            <!-- CARD 1 — Yoga Retreat (large) -->
+            <article
+              class="gallery-card"
+              data-delay="0"
+              itemscope
+              itemtype="https://schema.org/CreativeWork"
+            >
+              <span class="card-shimmer"></span>
+              <span class="card-num">01</span>
+              <div class="card-media">
+                <img
+                  class="card-poster"
+                  itemprop="image"
+                  src="assets/images/thumbnail-yoga.webp"
+                  alt="Landing page для йога-ретриту на Балі — by Twin Site Creator"
+                  loading="lazy"
+                  width="640"
+                  height="420"
+                />
+                <video
+                  class="card-video"
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  data-src="assets/videos/project-preview.mp4"
+                >
+                  <source
+                    data-src="assets/videos/project-preview.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div class="card-play-hint">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                    <polygon points="5,3 19,12 5,21" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-overlay"></div>
+              <div class="card-info">
+                <span class="card-tag">Landing Page · Wellness</span>
+                <h3 class="card-title" itemprop="name">
+                  Landing page для йога-ретриту — Балі
+                </h3>
+                <div class="card-result">
+                  <span>⚡ Запущено за 5 днів</span>
+                  <span>📱 Mobile-first</span>
+                </div>
+                <a
+                  class="card-link"
+                  href="https://twinsite-creation.github.io/yoga-retreat-landing/"
+                  target="_blank"
+                  rel="noopener"
+                  itemprop="url"
+                >
+                  Відкрити
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- CARD 2 — Pet Grooming -->
+            <article
+              class="gallery-card"
+              data-delay="80"
+              itemscope
+              itemtype="https://schema.org/CreativeWork"
+            >
+              <span class="card-shimmer"></span>
+              <span class="card-num">02</span>
+              <div class="card-media">
+                <img
+                  class="card-poster"
+                  itemprop="image"
+                  src="assets/images/thumbnail-pet.webp"
+                  alt="Бізнес-сайт для pet grooming студії — by Twin Site Creator"
+                  loading="lazy"
+                  width="640"
+                  height="420"
+                />
+                <video
+                  class="card-video"
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  data-src="assets/videos/project-preview.mp4"
+                >
+                  <source
+                    data-src="assets/videos/project-preview.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div class="card-play-hint">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                    <polygon points="5,3 19,12 5,21" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-overlay"></div>
+              <div class="card-info">
+                <span class="card-tag">Business Website · Local</span>
+                <h3 class="card-title" itemprop="name">
+                  Бізнес-сайт для pet grooming студії
+                </h3>
+                <div class="card-result">
+                  <span>🎯 Орієнтований на заявки</span>
+                  <span>📍 Local SEO структура</span>
+                </div>
+                <a
+                  class="card-link"
+                  href="https://twinsite-creation.github.io/pet-grooming-landing/"
+                  target="_blank"
+                  rel="noopener"
+                  itemprop="url"
+                >
+                  Відкрити
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- CARD 3 — Luxury Villas -->
+            <article
+              class="gallery-card"
+              data-delay="160"
+              itemscope
+              itemtype="https://schema.org/CreativeWork"
+            >
+              <span class="card-shimmer"></span>
+              <span class="card-num">03</span>
+              <div class="card-media">
+                <img
+                  class="card-poster"
+                  itemprop="image"
+                  src="assets/images/thumbnail-villas.webp"
+                  alt="Преміум-сайт для оренди та продажу вілл на Балі — Twin Site Creator"
+                  loading="lazy"
+                  width="640"
+                  height="420"
+                />
+                <video
+                  class="card-video"
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  data-src="assets/videos/project-preview.mp4"
+                >
+                  <source
+                    data-src="assets/videos/project-preview.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div class="card-play-hint">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                    <polygon points="5,3 19,12 5,21" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-overlay"></div>
+              <div class="card-info">
+                <span class="card-tag">Real Estate · Premium</span>
+                <h3 class="card-title" itemprop="name">
+                  Преміум-сайт для оренди та продажу вілл — Балі
+                </h3>
+                <div class="card-result">
+                  <span>🏆 Premium UX</span>
+                  <span>🌍 Міжнародна аудиторія</span>
+                </div>
+                <a
+                  class="card-link"
+                  href="https://twinsite-creation.github.io/luxury-villa-landing/"
+                  target="_blank"
+                  rel="noopener"
+                  itemprop="url"
+                >
+                  Відкрити
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- CARD 4 — Yoga variant -->
+            <article
+              class="gallery-card"
+              data-delay="240"
+              itemscope
+              itemtype="https://schema.org/CreativeWork"
+            >
+              <span class="card-shimmer"></span>
+              <span class="card-num">04</span>
+              <div class="card-media">
+                <img
+                  class="card-poster"
+                  src="assets/images/thumbnail-yoga.webp"
+                  alt="Wellness brand landing page — by Twin Site Creator"
+                  loading="lazy"
+                  width="640"
+                  height="420"
+                  style="object-position: center 30%"
+                />
+                <video
+                  class="card-video"
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  data-src="assets/videos/project-preview.mp4"
+                >
+                  <source
+                    data-src="assets/videos/project-preview.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div class="card-play-hint">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                    <polygon points="5,3 19,12 5,21" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-overlay"></div>
+              <div class="card-info">
+                <span class="card-tag">Wellness · UI/UX</span>
+                <h3 class="card-title" itemprop="name">
+                  Wellness Brand Landing Page
+                </h3>
+                <div class="card-result">
+                  <span>✨ Візуальний сторітелінг</span>
+                  <span>📱 Mobile-first</span>
+                </div>
+                <a
+                  class="card-link"
+                  href="https://twinsite-creation.github.io/yoga-retreat-landing/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Відкрити
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- CARD 5 — Pet variant -->
+            <article
+              class="gallery-card"
+              data-delay="320"
+              itemscope
+              itemtype="https://schema.org/CreativeWork"
+            >
+              <span class="card-shimmer"></span>
+              <span class="card-num">05</span>
+              <div class="card-media">
+                <img
+                  class="card-poster"
+                  src="assets/images/thumbnail-pet.webp"
+                  alt="Pet services platform website — by Twin Site Creator"
+                  loading="lazy"
+                  width="640"
+                  height="420"
+                  style="object-position: center 60%"
+                />
+                <video
+                  class="card-video"
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  data-src="assets/videos/project-preview.mp4"
+                >
+                  <source
+                    data-src="assets/videos/project-preview.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div class="card-play-hint">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                    <polygon points="5,3 19,12 5,21" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-overlay"></div>
+              <div class="card-info">
+                <span class="card-tag">WordPress · React</span>
+                <h3 class="card-title" itemprop="name">
+                  Pet Services Platform
+                </h3>
+                <div class="card-result">
+                  <span>⚙️ WordPress CMS</span>
+                  <span>🔗 Форма запису</span>
+                </div>
+                <a
+                  class="card-link"
+                  href="https://twinsite-creation.github.io/pet-grooming-landing/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Відкрити
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- CARD 6 — Villas wide -->
+            <article
+              class="gallery-card"
+              data-delay="400"
+              itemscope
+              itemtype="https://schema.org/CreativeWork"
+            >
+              <span class="card-shimmer"></span>
+              <span class="card-num">06</span>
+              <div class="card-media">
+                <img
+                  class="card-poster"
+                  src="assets/images/thumbnail-villas.webp"
+                  alt="Premium villa sales website Bali — by Twin Site Creator"
+                  loading="lazy"
+                  width="640"
+                  height="420"
+                  style="object-position: 30% center"
+                />
+                <video
+                  class="card-video"
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  data-src="assets/videos/project-preview.mp4"
+                >
+                  <source
+                    data-src="assets/videos/project-preview.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div class="card-play-hint">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                    <polygon points="5,3 19,12 5,21" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-overlay"></div>
+              <div class="card-info">
+                <span class="card-tag">E-commerce · Shopify</span>
+                <h3 class="card-title" itemprop="name">
+                  Premium Villa Sales — Shopify
+                </h3>
+                <div class="card-result">
+                  <span>🏆 Premium design</span>
+                  <span>🛒 Shopify інтеграція</span>
+                </div>
+                <a
+                  class="card-link"
+                  href="https://twinsite-creation.github.io/luxury-villa-landing/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Відкрити
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- CARD 7 — Yoga wide -->
+            <article
+              class="gallery-card"
+              data-delay="480"
+              itemscope
+              itemtype="https://schema.org/CreativeWork"
+            >
+              <span class="card-shimmer"></span>
+              <span class="card-num">07</span>
+              <div class="card-media">
+                <img
+                  class="card-poster"
+                  src="assets/images/thumbnail-yoga.webp"
+                  alt="Spa and retreat brand identity website — by Twin Site Creator"
+                  loading="lazy"
+                  width="640"
+                  height="420"
+                  style="object-position: center 50%"
+                />
+                <video
+                  class="card-video"
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  data-src="assets/videos/project-preview.mp4"
+                >
+                  <source
+                    data-src="assets/videos/project-preview.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div class="card-play-hint">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                    <polygon points="5,3 19,12 5,21" />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-overlay"></div>
+              <div class="card-info">
+                <span class="card-tag">Brand · Landing Page</span>
+                <h3 class="card-title" itemprop="name">
+                  Spa &amp; Retreat Brand Identity
+                </h3>
+                <div class="card-result">
+                  <span>🎨 Фірмовий стиль</span>
+                  <span>🌿 Преміум велнес</span>
+                </div>
+                <a
+                  class="card-link"
+                  href="https://twinsite-creation.github.io/yoga-retreat-landing/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Відкрити
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+          <!-- /.gallery -->
+
+          <!-- FOOTER CTA -->
+          <div class="portfolio-footer" id="portfolioFooter">
+            <p class="portfolio-footer__text">
+              Маєте проєкт? Обговоримо задачу та підберемо рішення під ваш
+              бюджет.
+            </p>
+            <a class="btn-gallery-cta" href="#contact">
+              Обговорити проєкт
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -553,161 +1163,6 @@
                 <li>Зручність для користувача</li>
               </ul>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===== PROJECTS ===== -->
-      <section class="projects section" id="projects">
-        <div class="container">
-          <div class="section__label reveal">Наші роботи</div>
-          <h2 class="section__title reveal">Обрані проєкти:</h2>
-          <div class="section__text">
-            <p>
-              Приклади сайтів та landing page, створених для бізнесу з метою
-              залучення клієнтів та розвитку онлайн-присутності.
-            </p>
-            <p>
-              Кожен проєкт — це поєднання сучасного дизайну, швидкості та
-              зручного користувацького досвіду.
-            </p>
-          </div>
-
-          <div class="projects__grid">
-            <article class="project-card reveal">
-              <div class="project-card__image">
-                <a
-                  target="_blank"
-                  href="https://twinsite-creation.github.io/yoga-retreat-landing/"
-                >
-                  <img
-                    src="assets/images/thumbnail-yoga.webp"
-                    alt="Landing page для йога-ретриту на Балі для велнес бізнесу"
-                    loading="lazy"
-                    width="640"
-                    height="420"
-                  />
-                </a>
-              </div>
-              <div class="project-card__body">
-                <a
-                  href="https://twinsite-creation.github.io/yoga-retreat-landing/"
-                  target="_blank"
-                >
-                  <span class="project-card__tag">Landing Page</span>
-                </a>
-
-                <h3 class="project-card__title">
-                  <a
-                    href="https://twinsite-creation.github.io/yoga-retreat-landing/"
-                    target="_blank"
-                    >Landing page для йога-ретриту</a
-                  >
-                </h3>
-
-                <p class="project-card__desc">
-                  Landing page для йога-ретриту на Балі, розроблений для
-                  залучення клієнтів через візуальний сторітелінг, чітку
-                  структуру та зрозумілий шлях користувача. Сайт адаптований для
-                  мобільних пристроїв і оптимізований для презентації послуг та
-                  бронювання.
-                </p>
-
-                <div class="project-card__techs" aria-label="Technologies used">
-                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-card__image">
-                <a
-                  target="_blank"
-                  href="https://twinsite-creation.github.io/pet-grooming-landing/"
-                >
-                  <img
-                    src="assets/images/thumbnail-pet.webp"
-                    alt="Сторінка веб-сайту компанії з догляду за домашніми тваринами"
-                    loading="lazy"
-                    width="640"
-                    height="420"
-                  />
-                </a>
-              </div>
-              <div class="project-card__body">
-                <a
-                  target="_blank"
-                  href="https://twinsite-creation.github.io/pet-grooming-landing/"
-                >
-                  <span class="project-card__tag">Business Website</span>
-                </a>
-
-                <h3 class="project-card__title">
-                  <a
-                    href="https://twinsite-creation.github.io/pet-grooming-landing/"
-                    target="_blank"
-                    >Сайт для грумінгу тварин</a
-                  >
-                </h3>
-
-                <p class="project-card__desc">
-                  Сайт для бізнесу з грумінгу тварин, створений для презентації
-                  послуг, залучення нових клієнтів та зручного перегляду на всіх
-                  пристроях. Продумана структура допомагає швидко знайти
-                  необхідну інформацію та залишити заявку.
-                </p>
-
-                <div class="project-card__techs" aria-label="Technologies used">
-                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-card__image">
-                <a
-                  target="_blank"
-                  href="https://twinsite-creation.github.io/luxury-villa-landing/"
-                >
-                  <img
-                    src="assets/images/thumbnail-villas.webp"
-                    alt="Сторінка веб-сайту компанії з продажу та оренди роскошних вілл на Балі"
-                    loading="lazy"
-                    width="640"
-                    height="420"
-                  />
-                </a>
-              </div>
-              <div class="project-card__body">
-                <a
-                  target="_blank"
-                  href="https://twinsite-creation.github.io/luxury-villa-landing/"
-                >
-                  <span class="project-card__tag">Business Website</span>
-                </a>
-
-                <h3 class="project-card__title">
-                  <a
-                    href="https://twinsite-creation.github.io/luxury-villa-landing/"
-                    target="_blank"
-                    >Сайт для оренди та продажу вілл</a
-                  >
-                </h3>
-
-                <p class="project-card__desc">
-                  Сайт для продажу та оренди вілл на Балі, розроблений для
-                  презентації преміальної нерухомості та залучення клієнтів.
-                  Включає адаптивний дизайн, чітку структуру контенту та зручний
-                  користувацький досвід.
-                </p>
-
-                <div class="project-card__techs" aria-label="Technologies used">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                </div>
-              </div>
-            </article>
           </div>
         </div>
       </section>
@@ -1014,5 +1469,6 @@
       </div>
     </div>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/gallery.js"></script>
   </body>
 </html>
