@@ -133,24 +133,6 @@ const staggerObserver = new IntersectionObserver(
   { threshold: 0.05 },
 );
 
-document.querySelectorAll(".projects__grid").forEach((grid) => {
-  staggerObserver.observe(grid);
-});
-
-/* ── SMOOTH SCROLL (older Safari polyfill) ──── */
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    const targetId = this.getAttribute("href");
-    if (targetId === "#") return;
-    const target = document.querySelector(targetId);
-    if (!target) return;
-    e.preventDefault();
-    const offset = 72;
-    const top = target.getBoundingClientRect().top + window.scrollY - offset;
-    window.scrollTo({ top, behavior: "smooth" });
-  });
-});
-
 /* ── VIDEO AUTOPLAY FALLBACK (Chrome policy guard) ── */
 const heroVideo = document.querySelector(".hero__video");
 if (heroVideo) {
