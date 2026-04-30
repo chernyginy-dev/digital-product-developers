@@ -1330,6 +1330,7 @@ h2 em {
 ══════════════════════════════════════════════ */
 .portfolio {
   border-bottom: 1px solid var(--color-border);
+  overflow: hidden;
 }
 
 /* ── HEADER ── */
