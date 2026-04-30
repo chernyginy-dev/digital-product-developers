@@ -1347,7 +1347,7 @@ h2 em {
 .portfolio-header__label {
   font-size: 0.68rem;
   font-weight: 600;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--color-accent);
   margin-bottom: 0.75rem;
