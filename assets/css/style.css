@@ -1237,7 +1237,7 @@ h2 em {
   cursor: pointer;
 
   /* glass effect */
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--color-accent);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 
@@ -1260,7 +1260,6 @@ h2 em {
 /* Hover */
 .back-to-top:hover {
   transform: translateY(-6px) scale(1.05);
-  background: rgba(255, 255, 255, 0.35);
 }
 
 /* Натиск */
@@ -1278,8 +1277,8 @@ h2 em {
 .back-to-top .arrow {
   width: 10px;
   height: 10px;
-  border-left: 2px solid #003d8b;
-  border-bottom: 2px solid #003d8b;
+  border-left: 2px solid var(--color-accent-secondary);
+  border-bottom: 2px solid var(--color-accent-secondary);
   transform: rotate(135deg);
   transition: transform 0.3s ease;
 }
