@@ -1003,6 +1003,220 @@
         </div>
       </section>
 
+      <!-- ===== REVIEWS ===== -->
+      <section class="reviews section" id="reviews" aria-label="Client Reviews">
+        <div class="container">
+          <div class="section__label reveal">Reviews</div>
+          <h2 class="section__title reveal">What Our <em>Clients</em> Say</h2>
+          <p class="section__text reveal">
+            The best proof of our work is the trust and recommendations of our
+            clients.
+          </p>
+
+          <div class="reviews__grid">
+            <article
+              class="review-card reveal"
+              itemscope
+              itemtype="https://schema.org/Review"
+            >
+              <header class="review-card__header">
+                <div class="review-card__stars" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </div>
+                <div
+                  itemprop="reviewRating"
+                  itemscope
+                  itemtype="https://schema.org/Rating"
+                >
+                  <meta itemprop="ratingValue" content="5" />
+                  <meta itemprop="bestRating" content="5" />
+                </div>
+              </header>
+              <blockquote class="review-card__quote" itemprop="reviewBody">
+                <p>
+                  "The team is incredibly talented and truly professional. They
+                  helped me build a beautiful presentation website for my work
+                  as a German language tutor. Every detail was carefully thought
+                  through - modern, tasteful, and exactly right. So grateful for
+                  the personalized approach, patience, and outstanding result."
+                </p>
+              </blockquote>
+              <footer class="review-card__footer">
+                <div class="review-card__preview">
+                  <a target="_blank" href="http://kurinova-deutsch.com/">
+                    <img
+                      src="../assets/images/review-preview-julia.webp"
+                      alt="Прев'ю сайту клієнтки Julia Kurinova"
+                      loading="lazy"
+                      width="64"
+                      height="48"
+                    />
+                  </a>
+                </div>
+                <div class="review-card__author">
+                  <cite
+                    itemprop="author"
+                    itemscope
+                    itemtype="https://schema.org/Person"
+                    ><span itemprop="name">Julia Kurinova</span></cite
+                  >
+                  <span class="review-card__meta"
+                    >Local Guide · Google Review</span
+                  >
+                </div>
+              </footer>
+            </article>
+
+            <article
+              class="review-card reveal"
+              itemscope
+              itemtype="https://schema.org/Review"
+            >
+              <header class="review-card__header">
+                <div class="review-card__stars" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </div>
+                <div
+                  itemprop="reviewRating"
+                  itemscope
+                  itemtype="https://schema.org/Rating"
+                >
+                  <meta itemprop="ratingValue" content="5" />
+                  <meta itemprop="bestRating" content="5" />
+                </div>
+              </header>
+              <blockquote class="review-card__quote" itemprop="reviewBody">
+                <p>
+                  "Working with this team was a great experience from start to
+                  finish. I especially appreciated that they proposed solutions
+                  that went beyond what I expected. Communication was smooth,
+                  and the result was exactly what I hoped for."
+                </p>
+              </blockquote>
+              <footer class="review-card__footer">
+                <div class="review-card__preview">
+                  <a
+                    target="_blank"
+                    href="https://www.psychotherapy-space.com/"
+                  >
+                    <img
+                      src="../assets/images/review-preview-svitlana.webp"
+                      alt="Прев'ю сайту клієнтки Світлана"
+                      loading="lazy"
+                      width="64"
+                      height="48"
+                    />
+                  </a>
+                </div>
+                <div class="review-card__author">
+                  <cite
+                    itemprop="author"
+                    itemscope
+                    itemtype="https://schema.org/Person"
+                    ><span itemprop="name">Svitlana</span></cite
+                  >
+                  <span class="review-card__meta">Google Review</span>
+                </div>
+              </footer>
+            </article>
+
+            <article
+              class="review-card reveal"
+              itemscope
+              itemtype="https://schema.org/Review"
+            >
+              <header class="review-card__header">
+                <div class="review-card__stars" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </div>
+                <div
+                  itemprop="reviewRating"
+                  itemscope
+                  itemtype="https://schema.org/Rating"
+                >
+                  <meta itemprop="ratingValue" content="5" />
+                  <meta itemprop="bestRating" content="5" />
+                </div>
+              </header>
+              <blockquote class="review-card__quote" itemprop="reviewBody">
+                <p>
+                  "A very professional approach, high-quality work, and pleasant
+                  communication throughout. Highly recommend."
+                </p>
+              </blockquote>
+              <footer class="review-card__footer">
+                <div class="review-card__preview">
+                  <a target="_blank" href="https://semeniuk-notary.com/">
+                    <img
+                      src="../assets/images/thumbnail-notary.webp"
+                      alt="Прев'ю сайту нотаріальної практики - клієнтка Людмила Семенюк"
+                      loading="lazy"
+                      width="64"
+                      height="48"
+                    />
+                  </a>
+                </div>
+                <div class="review-card__author">
+                  <cite
+                    itemprop="author"
+                    itemscope
+                    itemtype="https://schema.org/Person"
+                    ><span itemprop="name">Liudmyla Semeniuk</span></cite
+                  >
+                  <span class="review-card__meta">Google Review</span>
+                </div>
+              </footer>
+            </article>
+          </div>
+        </div>
+
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Twin Site Creator",
+            "url": "https://twinsitecreator.com/en/",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "reviewCount": "3"
+            },
+            "review": [
+              {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Julia Kurinova" },
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                },
+                "reviewBody": "The team is incredibly talented and truly professional. They helped me build a beautiful presentation website for my work as a German tutor."
+              },
+              {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Svitlana" },
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                },
+                "reviewBody": "Working with this team was a great experience. They proposed solutions that went beyond what I expected."
+              },
+              {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Liudmyla Semeniuk" },
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                },
+                "reviewBody": "A very professional approach, high-quality work, and pleasant communication."
+              }
+            ]
+          }
+        </script>
+      </section>
+
       <!-- ===== ABOUT ===== -->
       <section class="about section" id="about">
         <div class="container about__inner">
